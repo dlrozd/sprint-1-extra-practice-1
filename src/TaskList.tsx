@@ -7,6 +7,7 @@ type TaskListPropsType = {
 }
 
 export const TaskList = (props: TaskListPropsType) => {
+
     return (
         <div>
             <h1>{props.data.title}</h1>

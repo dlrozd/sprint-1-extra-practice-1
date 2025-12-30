@@ -1,5 +1,6 @@
 import './App.css';
 import {TaskList} from "./TaskList.tsx";
+import {AutoList} from "./AutoList.tsx";
 
 export const App = ()=> {
     const data1 = {
@@ -116,10 +117,17 @@ export const App = ()=> {
         ]
     }
 
+    const topCars = [
+        { manufacturer: 'BMW', model: 'm5cs' },
+        { manufacturer: 'Mercedes', model: 'e63s' },
+        { manufacturer: 'Audi', model: 'rs6' },
+    ]
+
     return (
         <div className="App">
             <TaskList data={data1}/>
             <TaskList data={data2}/>
+            <AutoList cars={topCars}/>
         </div>
     );
 }

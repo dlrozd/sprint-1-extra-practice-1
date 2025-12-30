@@ -117,3 +117,55 @@ button:hover {
   background: #dfe6e9;
   border-radius: 10px;
 }
+
+/* Стили для таблицы машин */
+.table-container {
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.auto-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #edf2f7;
+}
+
+.auto-table th {
+  background-color: #6c5ce7;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.auto-table td {
+  padding: 12px 16px;
+  background-color: white;
+  border-bottom: 1px solid #edf2f7;
+  color: #2d3436;
+  font-size: 0.95rem;
+}
+
+.auto-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.auto-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.auto-table tbody tr:hover td {
+  background-color: #f8f9fa;
+  color: #6c5ce7;
+  cursor: default;
+}
+
+/* Добавим небольшую иконку перед производителем для красоты (опционально) */
+.auto-table td:first-child {
+  font-weight: 600;
+}
